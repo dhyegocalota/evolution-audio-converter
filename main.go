@@ -646,5 +646,5 @@ func main() {
 	router.POST("/process-audio", processAudio)
 	router.POST("/transcribe", transcribeOnly)
 
-	router.Run(":" + port, nil)
+	router.Run("0.0.0.0:" + port)
 }
