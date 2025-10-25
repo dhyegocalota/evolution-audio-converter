@@ -1,5 +1,5 @@
 services:
-  api:
+  evolution-audio-converter:
     build: .
     restart: unless-stopped
     ports:
