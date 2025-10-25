@@ -631,8 +631,8 @@ func main() {
 		port = "8080"
 	}
 
+	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
-	router.SetMode(gin.ReleaseMode)
 
 	config := cors.DefaultConfig()
 	config.AllowOrigins = allowedOrigins
