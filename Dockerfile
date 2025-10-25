@@ -20,7 +20,7 @@ COPY . .
 RUN go build -o main .
 
 # Definir a variável de ambiente para a porta
-ENV PORT=4040
+ENV PORT=8080
 
 # Expor a porta definida
 EXPOSE ${PORT}
