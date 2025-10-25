@@ -19,11 +19,8 @@ COPY . .
 # Compilar o binário do Go
 RUN go build -o main .
 
-# Definir a variável de ambiente para a porta
-ENV PORT=8080
-
 # Expor a porta definida
-EXPOSE ${PORT}
+EXPOSE 8089
 
 # Comando para rodar o servidor
 CMD ["./main"]
