@@ -626,11 +626,6 @@ func transcribeOnly(c *gin.Context) {
 }
 
 func main() {
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "4040"
-	}
-
 	gin.SetMode(gin.ReleaseMode)
 	router := gin.Default()
 
@@ -646,5 +641,5 @@ func main() {
 	router.POST("/process-audio", processAudio)
 	router.POST("/transcribe", transcribeOnly)
 
-	router.Run("0.0.0.0:" + port)
+	router.Run(":3000")
 }

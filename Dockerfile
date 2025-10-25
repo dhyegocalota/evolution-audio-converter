@@ -20,7 +20,7 @@ COPY . .
 RUN go build -o main .
 
 # Expor a porta definida
-EXPOSE 4040
+EXPOSE 3000
 
 # Comando para rodar o servidor
 CMD ["./main"]
