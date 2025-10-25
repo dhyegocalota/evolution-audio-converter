@@ -1,6 +1,6 @@
 services:
   api:
-    image: atendai/evolution-audio-converter:latest
+    build: .
     restart: unless-stopped
     ports:
       - 4040
@@ -11,7 +11,6 @@ services:
       - API_KEY=${API_KEY}
     expose:
       - 4040
-
 
 networks:
   dokploy-network:
