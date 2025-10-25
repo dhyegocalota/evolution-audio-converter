@@ -632,6 +632,7 @@ func main() {
 	}
 
 	router := gin.Default()
+	router.SetMode(gin.ReleaseMode)
 
 	config := cors.DefaultConfig()
 	config.AllowOrigins = allowedOrigins
